@@ -15,10 +15,12 @@ export default {
   name: 'beers-list',
   props: ['beers'],
   components: {
-    "list-component": ListComponent
-  }
+  "list-component": ListComponent
+},
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="css" scoped
+
+
 </style>

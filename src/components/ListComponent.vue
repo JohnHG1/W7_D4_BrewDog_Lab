@@ -1,6 +1,8 @@
 <template lang="html">
+  <div>
+    <input v-model="beer.isFavourite" type="checkbox" >
   <li @click="handleClick">{{beer.name}}</li>
-
+</div>
 </template>
 
 <script>
@@ -11,7 +13,7 @@ export default {
   props: ['beer'],
   methods: {
     handleClick(){
-      eventBus.$emit('beer-selected',this.beer);
+      eventBus.$emit('beer-selected', this.beer);
     }
   }
 }
@@ -19,22 +21,13 @@ export default {
 
 <style lang="css" scoped>
 
-
-  li {
-    border: 1.2px dotted;
-    border-radius: 6em;
-    width: 40%;
-    margin: 1em 3em 1em 4em;
+li {
     list-style: none;
-    background-color: lightgreen;
-    padding: 0.5em 0em;
-    font-size: 1.2em;
-    cursor: pointer;
-  }
+    padding: 0;
+    margin: 0;
+}
 
-  li:hover {
-    background-color: gold;
-  }
+
 
 
 </style>

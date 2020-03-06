@@ -17,7 +17,6 @@ export default {
 <style lang="css" scoped>
 
 img {
-  /* width: inherit; */
   width: 3em;
   position: center;
 }
@@ -26,8 +25,8 @@ img {
   text-align:inherit;
   border: 1.2px dotted;
   border-radius: 2em;
-  width: 60%;
-  position:inherit;
+  width: 38%;
+  position:fixed;
   right: 4;
   padding: 1.2em 1em 1.1em 1em;
   background-color: grey;
@@ -41,14 +40,5 @@ h3 {
   text-decoration: underline;
   padding-bottom: 0.3em;
 }
-
-/*
-div {
-    max-width: 33%;
-  }
-  img {
-    max-height: 25%;
-    max-width: 25%;
-  } */
 
 </style>

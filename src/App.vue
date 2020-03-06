@@ -2,7 +2,7 @@
   <main>
     <div class="container">
         <h1>Beer List</h1>
-        
+
         <div id="list">
           <beers-list :beers='beers'></beers-list>
         </div>
@@ -106,10 +106,13 @@ main {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  font-size: 1.2em;
   margin: 1em 1em 1em 2em;
   color: #2c3e50;
   margin-top: 100px;
   width: 23%;}
+
+
 
 
   </style>

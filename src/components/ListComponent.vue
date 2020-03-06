@@ -41,7 +41,9 @@ li {
     background-color: gold;
   }
 
-
+checkbox {
+  size: 16em;
+}
 
 
 </style>

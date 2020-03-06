@@ -1,21 +1,22 @@
 <template>
   <main>
     <div class="container">
-      <h1>Beer List</h1>
+        <h1>Beer List</h1>
+        
+        <div id="list">
+          <beers-list :beers='beers'></beers-list>
+        </div>
 
-    <div id="list">
-      <beers-list :beers='beers'></beers-list>
-    </div>
+        <div id="detail">
+          <beer-detail v-if="selectedBeer" :beer="selectedBeer"></beer-detail>
+        </div>
 
-    <div id="detail">
-      <beer-detail v-if="selectedBeer" :beer="selectedBeer"></beer-detail>
-    </div>
+        <div id="favourites">
+          <h2>Favourite Beers</h2>
+          <favourite-beers :beers="favouriteBeers"></favourite-beers>
+        </div>
 
-    <div id="favourites">
-      <h2>Favourite Beers</h2>
-      <favourite-beers :beers="favouriteBeers"></favourite-beers>
     </div>
-  </div>
   </main>
 </template>
 
@@ -68,18 +69,19 @@ export default {
 
 <style>
 
-
-
 main {
+  background-color: silver;
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
   align-content: center;
 }
+
 .container {
   width: 100%;
-  display: flex;
+  display:inline-flex;
   justify-content: space-between;
+
 }
 #list {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -87,26 +89,27 @@ main {
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 #detail {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
+  margin: 1em 3em 1em 4em;
   color: #2c3e50;
-  margin-top: 60px;
-  width: 65%;
+  margin-top: 100px;
+  width: 33%;
 }
 #favourites {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: left;
+  text-align: center;
+  margin: 1em 1em 1em 2em;
   color: #2c3e50;
-  margin-top: 60px;
-  width: 65%;
-}
+  margin-top: 100px;
+  width: 23%;}
 
 
-</style>
+  </style>
